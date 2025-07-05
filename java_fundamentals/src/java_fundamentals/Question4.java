@@ -1,9 +1,9 @@
 package java_fundamentals;
-import java.util.Scanner;
-public class Question4 {
-
+import java.util.*;
+public class Question4{
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter num");
+		Scanner sc=new Scanner(System.in);
 		int num=sc.nextInt();
 		if(num>0) {
 			System.out.println("Positive");
@@ -14,6 +14,7 @@ public class Question4 {
 		else {
 			System.out.println("Zero");
 		}
+		sc.close();
 	}
-}
 
+}
