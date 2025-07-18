@@ -1,34 +1,33 @@
 package oops_inheritance;
 import java.util.Scanner;
+public class Question1 {
 
+	public static void main(String[] args) {
 		
-	class Box {
-		double width;
-		double height;
-		double depth;
-		Box (double w, double h, double d) {
-			width = w;
-			height = h;
-			depth = d;
-		}
-		double getVolume() {
-	        return width * height * depth;
-	    }
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter width of the box: ");
+		double width = sc.nextDouble();
+		System.out.print("Enter height of the box: ");
+		double height = sc.nextDouble();
+		System.out.print("Enter depth of the box: ");
+		double depth = sc.nextDouble();
+		Box box = new Box(width, height, depth);
+		System.out.println("Volume of the box is: " + box.getVolume());
+		sc.close();
+	}
+}
+
+class Box {
+	double width, height, depth;
+
+	Box(double width, double height, double depth) {
+		this.width = width;
+		this.height = height;
+		this.depth = depth;
 	}
 
-	public class Question1 {
-
-	    public static void main(String[] args) {
-	    	Scanner sc = new Scanner(System.in);
-	        Box myBox = new Box(5.0, 3.0, 2.0);
-
-	        
-	        double volume = myBox.getVolume();
-	        System.out.println("The volume of the box is: " + volume);
-	        sc.close();
-	    }
-	
-			
-		}
-
+	double getVolume() {
+		return width * height * depth;
+	}
+}
 
