@@ -1,10 +1,10 @@
 package oops_inheritance;
-import java.util.*;
+import java.util.Scanner;;
 public class Question4 {
 	
 		public static void main(String[] args) {
 			// TODO Auto-generated method stub
-			
+			Scanner sc = new Scanner(System.in);
 			Animal animal = new Animal();
 			System.out.println("--- Animal Actions ---");
 			animal.eat();
@@ -38,6 +38,7 @@ public class Question4 {
 
 		public void fly() {
 			System.out.println("Bird is flying high in the sky");
+			
 		}
 	}
 
