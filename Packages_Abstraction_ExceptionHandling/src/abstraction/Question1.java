@@ -28,7 +28,7 @@ class Luggage extends Compartment {
     }
 }
 
-public class question1 {
+public class Question1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Compartment[] compartments = new Compartment[10];
